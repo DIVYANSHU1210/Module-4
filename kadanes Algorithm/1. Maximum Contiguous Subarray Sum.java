@@ -17,12 +17,12 @@ class Main {
 class Solution{
     public long maxSubarraySum(int a[],int n){
         int sum = 0;
-		long maxsum = Integer.MIN_VALUE;
-		for(int i = 0; i<n; i++){
-			sum += a[i];
-			maxsum = Math.max(maxsum, sum);
-			if(sum < 0)sum = 0;
-		}
-		return maxsum;
+	long maxsum = Integer.MIN_VALUE;
+	for(int i = 0; i<n; i++){
+		sum += a[i];
+		maxsum = Math.max(maxsum, sum);
+		if(sum < 0)sum = 0;
+	}
+	return maxsum;
     }
 }
